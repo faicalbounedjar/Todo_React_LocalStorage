@@ -82,7 +82,7 @@ const ToDoWrapper = () => {
     );
   };
   return (
-    <div className="  bg-[#1A1A40] p-20  rounded-md">
+    <div className="  bg-[#ff9f1c] p-20  rounded-md">
       <h1 className="flex justify-center text-4xl font-bold mb-4">To Do app</h1>
       <ToDoForm addTodo={addTodo} />
       {tasks.map((todo) =>

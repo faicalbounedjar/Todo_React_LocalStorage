@@ -8,15 +8,17 @@ const ToDoForm = ({ addTodo }) => {
   // functions
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(task);
-    setTask("");
+    if (task !== "") {
+      addTodo(task);
+      setTask("");
+    }
   };
   return (
     <form className="form w-full mb-1 " onSubmit={handleSubmit}>
       <input
         type="text"
         value={task}
-        className=" todo-input mr-2 rounded-md"
+        className=" todo-input mr-2 rounded-md placeholder:text-white"
         placeholder="what is today's task"
         onChange={(e) => {
           setTask(e.target.value);
@@ -24,7 +26,7 @@ const ToDoForm = ({ addTodo }) => {
       />
       <button
         type="submit"
-        className=" rounded-md p-2  bg-[#8758ff] cursor-pointer text-white "
+        className=" rounded-md p-2  bg-[#141414] cursor-pointer text-white "
       >
         add Task
       </button>

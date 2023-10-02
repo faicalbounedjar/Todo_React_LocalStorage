@@ -1,8 +1,9 @@
 import ToDoWrapper from "./components/ToDoWrapper";
-import "./app.css";
+import "./App.css";
+
 function App() {
   return (
-    <div className="flex justify-center items-center bg-[#8758ff] h-screen w-full">
+    <div className="flex justify-center items-center bg-[#141414] h-screen w-full">
       <ToDoWrapper />
     </div>
   );

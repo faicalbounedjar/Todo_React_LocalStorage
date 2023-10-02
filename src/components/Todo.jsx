@@ -3,13 +3,13 @@ import React from "react";
 const Todo = ({ task, toggleComplete, deleteTask, editTodo }) => {
   return (
     // hover:bg-[#6b46c9]
-    <div className=" my-4 cursor-pointer  flex justify-between items-center bg-[#8758ff] hover:bg-[#6b46c9] hover:bg-[#8059e3] text-white p-3 rounded-md">
+    <div className=" my-4 cursor-pointer  flex justify-between items-center bg-[#141414] hover:bg-[#18273e]  text-white p-3 rounded-md">
       <p
         onClick={() => {
           toggleComplete(task.id);
         }}
         className={` w-full py-2  ${
-          task.completed ? " text-[#c5aeff] line-through  " : ""
+          task.completed ? " text-[#EEC643] line-through  " : ""
         }`}
       >
         {task.title}
